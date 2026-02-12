@@ -1,0 +1,2 @@
+# Ai
+Aviator predictions bot
