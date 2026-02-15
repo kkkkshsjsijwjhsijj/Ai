@@ -1,41 +1,58 @@
-.aviator {
-    background-color: #282c34;
-    color: white;
-    font-family: 'Arial', sans-serif;
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
+    background-color: #121212;
+    color: #e0e0e0;
+    padding: 20px;
 }
 
 .header {
-    font-size: 2rem;
+    font-size: 2em;
     margin-bottom: 20px;
 }
 
 .button {
-    background-color: #61dafb;
-    border: none;
+    background-color: #6200ee;
+    color: white;
     padding: 10px 20px;
-    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 .button:hover {
-    background-color: #21a1f1;
+    background-color: #3700b3;
 }
 
-.input {
-    padding: 10px;
-    border: 1px solid #61dafb;
-    border-radius: 5px;
-    margin-bottom: 20px;
+.stat-card {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.footer {
-    position: absolute;
-    bottom: 10px;
-    font-size: 0.8rem;
+.prediction-panel {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    width: 100%;
+}
+
+.history-box {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
 }
