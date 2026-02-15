@@ -1,44 +1,41 @@
-.container {
-    width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-}
-
-header {
-    background-color: #4CAF50;
+.aviator {
+    background-color: #282c34;
     color: white;
-    padding: 10px 0;
-    text-align: center;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
-h1 {
-    font-size: 2.5em;
+.header {
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
-h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-button {
-    background-color: #f44336;
+.button {
+    background-color: #61dafb;
     border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
+    padding: 10px 20px;
+    font-size: 1rem;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-footer {
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    background-color: #f1f1f1;
+.button:hover {
+    background-color: #21a1f1;
+}
+
+.input {
+    padding: 10px;
+    border: 1px solid #61dafb;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 10px;
+    font-size: 0.8rem;
 }
