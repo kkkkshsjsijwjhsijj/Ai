@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviator Prediction Bot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>✈️ Aviator Prediction Bot</h1>
+            <p>Real-time Next Round Outcome Predictions</p>
+        </header>
+
+        <div class="main-content">
+            <div class="prediction-panel">
+                <h2>Current Round Analysis</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <label>Current Multiplier</label>
+                        <div class="stat-value" id="currentMultiplier">1.00x</div>
+                    </div>
+                    <div class="stat-card">
+                        <label>Round Status</label>
+                        <div class="stat-value" id="roundStatus">Waiting</div>
+                    </div>
+                    <div class="stat-card">
+                        <label>Time Elapsed</label>
+                        <div class="stat-value" id="timeElapsed">0.0s</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="prediction-panel">
+                <h2>🎯 Next Round Prediction</h2>
+                <div class="prediction-box">
+                    <div class="prediction-item">
+                        <span class="label">Predicted Crash Point:</span>
+                        <span class="value" id="predictedCrash">--</span>
+                    </div>
+                    <div class="prediction-item">
+                        <span class="label">Confidence Level:</span>
+                        <span class="value" id="confidence">--</span>
+                    </div>
+                    <div class="prediction-item">
+                        <span class="label">Trend Analysis:</span>
+                        <span class="value" id="trend">--</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="prediction-panel">
+                <h2>Recent Outcomes</h2>
+                <div class="history-box" id="historyBox">
+                    <p class="empty-state">No data yet. Start the simulation to see history.</p>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button id="startBtn" class="btn btn-primary">Start Simulation</button>
+                <button id="stopBtn" class="btn btn-danger" disabled>Stop Simulation</button>
+                <button id="resetBtn" class="btn btn-secondary">Reset Data</button>
+            </div>
+
+            <div class="settings-panel">
+                <h2>Settings</h2>
+                <div class="setting-group">
+                    <label for="speedControl">Simulation Speed:</label>
+                    <input type="range" id="speedControl" min="0.5" max="3" step="0.5" value="1">
+                    <span id="speedValue">1x</span>
+                </div>
+                <div class="setting-group">
+                    <label for="historyLimit">Show Last:</label>
+                    <input type="number" id="historyLimit" min="5" max="50" value="10">
+                    <span>rounds</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
